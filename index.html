@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Grocery Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smart Grocery Cart</h1>
+    <div class="cart-container">
+        <div class="form-group">
+            <input type="text" id="itemName" placeholder="Enter item name" required>
+            <input type="number" id="itemPrice" placeholder="Enter item price (₹)" required>
+            <input type="number" id="itemQty" placeholder="Enter item quantity" required min="1">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+        <table id="cart-container">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Price (₹)</th>
+                    <th>Quantity</th>
+                    <th>Total (₹)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="total">
+            <span>Total Amount:</span>
+            <span id="totalAmount">0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
